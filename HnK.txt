@@ -1,0 +1,17 @@
+<div class="sfond"><center>
+<div class="scontent"><div class="sgtitre">Règlement du forum</div>
+<div class="stitre">Précision importante</div>
+<span class="sstitre">Sous-titre</div>
+</div></center>
+</div>
+
+<table><td><span class="jsstitre">PRENOM NOM # Statut.</span>
+<div class="jtexte">Description de la relation.</div></td><td><img src="http://i84.servimg.com/u/f84/13/80/01/80/sans_t32.png" class="jimg2"/></td></table>
+
+<table><td><img src="http://i84.servimg.com/u/f84/13/80/01/80/sans_t32.png" class="jimg"/></td><td><span class="jsstitre">PRENOM NOM # Statut.</span>
+<div class="jtexte">Description de la relation.</div></td></table>
+
+Jess: #F99271
+Hailee : #2F8CA4
+Shawn : #2F4F4F
+Nelly-Pi : #FF456A

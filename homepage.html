@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lan="fr">
+<head>
+	<title>CE BNP</title>
+	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="cssprojet.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img id="img_logo" src="images/logo_poulpe_bnp.png"/></a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#" id="btn_home">Home</a></li>
+						<li class="noactive"><a href="#connexion" class="btn_connexion" data-toggle="modal" data-target="#myModal" data-backdrop="false">Connexion</a></li>
+						<li class="noactive"><a href="#connexion" class="btn_deconnexion">Deconnexion</a></li>
+						<li class="noactive"><a href="#" id="btn_profil">Profil</a></li>
+						<li class="dropdown dropdown-notifications">
+							<a href="#notifications-panel" id="btn_notif">
+								<i class="glyphicon glyphicon-bell notification-icon"></i>Notifications (2)
+							</a>
+							<div id="notifications-panel">
+								<div class="alert alert-danger">
+									<strong>Note:</strong> Vous devez apporter un justificatif de domicile avant le 23/11 au bureau de la RH.
+								</div>
+								<div class="alert alert-info">
+									<strong>Info:</strong> Réservez vos places pour Star Wars : Rogue One !
+								</div>
+							</div>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right inline-form">
+						<div class="form-group">
+							<span class="glyphicon glyphicon-search"></span><input type="search" class="input-sm form-control" placeholder="Recherche" name="key" value="" /><button class="btn btn-primary btn-sm" onclick="">Rechercher</button></br>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Se connecter</h4>
+					</div>
+					<div class="modal-body">
+						<input name="username" placeholder="Idenfiant (3 caractères minimum)" class="form-control" type="text" id="UserUsername"/>
+						<input name="password" placeholder="Mot de passe (6 caractères minimum)" class="form-control" type="password" id="UserPassword"/>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" id="connexion_btn" class="btn btn-primary" data-dismiss="modal">Connexion</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<div id="corps">
+		<br>
+		<h1>Nouveautés</h1>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="first-slide " src="images/back_carou.png" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Projection : Stars Wars Rogue One</h1>
+							<p>le 14 décembre, venez profiter d'une projection en avant-première du nouveau Star Wars : Rogue One.</p>
+							<p><a class="btn btn-lg btn-primary" href="back_carou.png" role="button">Réserver ses places</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="second-slide" src="images/back_carou2.png" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Voyage collectif : L'Ouzbékistan</h1>
+							<p>Le comité organise un voyage collectif en Ouzbékistan. Si vous êtes intéressés, il reste encore des places disponibles.</p>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">En savoir plus</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="third-slide" src="images/back_carou3.png" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Vacances : Colonies en Midi-Pyrénées</h1>
+							<p>Le comité vous propose des places en colonies de vacances pour vos enfants. N'oubliez pas de réserver leur place sur le créneau que vous préférez.</p>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">En savoir plus</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="fourth-slide" src="images/back_carou4.png" alt="Fourth slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Nouveautés : garde d'enfant</h1>
+							<p>Les nouvelles conditions de remboursement des frais de garde pour vos enfants sont disponibles. Vous pouvez les consulter dès à présent.</p>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">Consulter</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<br>
+		<div id="my_body"> 
+			<h1>Témoignages</h1>
+			<div class="temoignages container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 temoin">
+						<img src="images/icone_temoins.png" alt="Temoin" class="img_temoin">
+						<blockquote><h3>PRENOM NOM</h3><b>Poste occupé - </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur enim mauris, sit amet cursus dolor laoreet id. Duis tincidunt sodales lectus, at vulputate nibh accumsan non. Vivamus placerat molestie nisl in ornare. Donec convallis urna vel dignissim aliquam. In tincidunt id ligula id volutpat. Sed ac lorem sit amet erat pharetra commodo. In gravida arcu nec neque semper, in porttitor nisl tincidunt. Aliquam vel leo turpis. Phasellus id ante nisi. Donec eu lectus vel ex viverra porta. Vestibulum iaculis hendrerit felis, a lacinia diam porttitor sed. Suspendisse facilisis tempus tortor sed ornare. Donec fermentum metus vitae dignissim porta. Aliquam dignissim pharetra mauris eu pellentesque. Duis pretium nisl ligula, in commodo nisi imperdiet posuere. Nunc ipsum ligula, aliquam quis nulla ut, convallis ultricies erat. In lectus lectus, vestibulum vitae mi eu, ultrices tristique ex.</blockquote>
+					</div>
+					<div class="col-xs-12 col-md-4 temoin">
+						<img src="images/icone_temoins.png" alt="Temoin" class="img_temoin">
+						<blockquote><h3>PRENOM NOM</h3><b>Poste occupé - </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur enim mauris, sit amet cursus dolor laoreet id. Duis tincidunt sodales lectus, at vulputate nibh accumsan non. Vivamus placerat molestie nisl in ornare. Donec convallis urna vel dignissim aliquam. In tincidunt id ligula id volutpat. Sed ac lorem sit amet erat pharetra commodo. In gravida arcu nec neque semper, in porttitor nisl tincidunt. Aliquam vel leo turpis. Phasellus id ante nisi. Donec eu lectus vel ex viverra porta. Vestibulum iaculis hendrerit felis, a lacinia diam porttitor sed. Suspendisse facilisis tempus tortor sed ornare. Donec fermentum metus vitae dignissim porta. Aliquam dignissim pharetra mauris eu pellentesque. Duis pretium nisl ligula, in commodo nisi imperdiet posuere. Nunc ipsum ligula, aliquam quis nulla ut, convallis ultricies erat. In lectus lectus, vestibulum vitae mi eu, ultrices tristique ex.</blockquote>
+					</div>
+					<div class="col-xs-12 col-md-4 temoin">
+						<img src="images/icone_temoins.png" alt="Temoin" class="img_temoin">
+						<blockquote><h3>PRENOM NOM</h3><b>Posté occupé - </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur enim mauris, sit amet cursus dolor laoreet id. Duis tincidunt sodales lectus, at vulputate nibh accumsan non. Vivamus placerat molestie nisl in ornare. Donec convallis urna vel dignissim aliquam. In tincidunt id ligula id volutpat. Sed ac lorem sit amet erat pharetra commodo. In gravida arcu nec neque semper, in porttitor nisl tincidunt. Aliquam vel leo turpis. Phasellus id ante nisi. Donec eu lectus vel ex viverra porta. Vestibulum iaculis hendrerit felis, a lacinia diam porttitor sed. Suspendisse facilisis tempus tortor sed ornare. Donec fermentum metus vitae dignissim porta. Aliquam dignissim pharetra mauris eu pellentesque. Duis pretium nisl ligula, in commodo nisi imperdiet posuere. Nunc ipsum ligula, aliquam quis nulla ut, convallis ultricies erat. In lectus lectus, vestibulum vitae mi eu, ultrices tristique ex.</blockquote>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="partenaires">
+				<h1>Partenaires</h1>
+				<a href="http://www.ticketkadeos.fr/" target="_blank"><img src="images/kadeos_img.png" class="img_partenaires"/></a> <a href="http://www.fnac.com/" target="_blank"><img src="images/fnac_img.png" class="img_partenaires"/></a> <a href="http://www.cinemasgaumontpathe.com/" target="_blank"><img src="images/gaumont_img.png" class="img_partenaires"/></a>
+			</div>
+		</div><!--FIN MY_BODY-->
+		<div id="my_body2">
+			<h1>Informations</h1>
+			<ul class="nav nav-pills">
+				<li class="active mon_btn"><a data-toggle="pill" href="#user">Utilisateur</a></li>
+				<li class="mon_btn"><a data-toggle="pill" href="#ayant_droits">Ayant-Droits</a></li>
+				<li class="mon_btn"><a data-toggle="pill" href="#infos_paiement">Informations de paiement</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="user" class="tab-pane fade in active">
+					<h3>Informations de l'utilisateur</h3>
+					<div class="user_info_content">
+						<label for="nom">Nom : </label><input name="nom" value="Dupont" class="form-control" type="text" id="UserUsername" disabled="disabled"/>
+						<label for="prenom">Prénom : </label><input name="prenom" value="Caroline" class="form-control" type="text" id="UserUsername" disabled="disabled"/>
+						<label for="adresse">Adresse : </label><input name="adresse" value="8 rue Henri Dunant, 95240 Cormeilles en Parisis" class="form-control" type="text" id="UserUsername" disabled="disabled"/>
+						<label for="telephone">Téléphone : </label><input name="telephone" value="0652498795" class="form-control" type="text" id="UserUsername" disabled="disabled"/>
+						<label for="email">Email : </label><input type="email" name="mail" value="email@gmail.com" class="form-control" disabled="disabled"/>
+						<label for="droits">Droits : </label><input name="droits" value="1600" class="form-control" type="text" id="UserUsername" disabled="disabled"/>
+
+						<a id="modifier_info" class="btn btn-lg btn-success" href="#" role="button">Modifier les informations</a> <a id="enregistrer_info" class="btn btn-lg btn-success" href="#" role="button">Enregistrer</a>
+					</div>
+				</div>
+				<div id="ayant_droits" class="tab-pane fade">
+					<h3>Informations sur les ayant-droits</h3>
+					<div class="user_ayant_droits">
+						<table id="matable" class="table table-hover">
+							<thead>
+								<tr>
+									<th>Nom</th>
+									<th>Prenom</th>
+									<th>Date de naissance</th>
+									<th>Lien de parenté</th>
+									<th>Droits restant</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input name="nom_ad" placeholder="Nom" value="Dupont" class="form-control" type="text" disabled="disabled" /></td>
+									<td><input name="prenom_ad" placeholder="Prénom" value="Maurice" class="form-control" type="text" disabled="disabled" /></td>
+									<td><input name="ddn_ad" placeholder="Date de naissance" value="2016-11-22" class="form-control ddn" type="date" disabled="disabled" /></td>
+									<td><input name="parente_ad" list="parente" type="text" value="Mari" class="form-control" disabled/>
+										<datalist id="parente">
+											<option value="Mari"/>
+											<option value="Femme"/>
+											<option value="Enfant"/>
+										</datalist>
+									</td>
+									<td><input name="droits_ad" placeholder="Droits" value="1200" class="form-control" type="text" disabled="disabled" /></td>
+									<td><button type="button" id="modifier_tab" class="btn btn-success edit">Modifier</button> <button type="button" class="btn btn-danger suppr_line">Supprimer</button></td>
+								</tr>
+								<tr>
+									<td><input name="nom_ad" placeholder="Nom" value="Dupont" class="form-control" type="text" disabled="disabled" /></td>
+									<td><input name="prenom_ad" placeholder="Prénom" value="Maurice" class="form-control" type="text" disabled="disabled" /></td>
+									<td><input name="ddn_ad" placeholder="Date de naissance" value="2016-11-22" class="form-control ddn" type="date" disabled="disabled" /></td>
+									<td><input name="parente_ad" list="parente" type="text" value="Mari" class="form-control" disabled/>
+										<datalist id="parente">
+											<option value="Mari"/>
+											<option value="Femme"/>
+											<option value="Enfant"/>
+										</datalist>
+									</td>
+									<td><input name="droits_ad" placeholder="Droits" value="1200" class="form-control" type="text" disabled="disabled" /></td>
+									<td><button type="button" id="modifier_tab" class="btn btn-success edit">Modifier</button> <button type="button" class="btn btn-danger suppr_line">Supprimer</button></td>
+								</tr>
+							</tbody>
+						</table>
+						<button type="button" id="ajout_btn" class="btn btn-success">Ajouter</button> <span id="message"></span>
+					</div>
+				</div>
+				<div id="infos_paiement" class="tab-pane fade">
+					<h3>Informations de paiements</h3>
+					<div id="info_enregitrement_bancaire"></div>
+					<div class="user_bancaire">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Code Banque</th>
+									<th>Code Guichet</th>
+									<th>Numéro de compte</th>
+									<th>Clé RIB</th>
+									<th>Domiciliation</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td id="user_code_banque">12345</td>
+									<td id="user_code_guichet">12345</td>
+									<td id="user_num_compte">1234567891A</td>
+									<td id="user_cle_rib">12</td>
+									<td id="user_domiciliation">banque-ville-agance</td>
+								</tr>
+								<tr>
+									<th>IBAN</th>
+									<td colspan="2" id="user_iban">FR00 1234 5123 4512 3456 7891 A12</td>
+									<th>BIC</th>
+									<td id="user_bic">ABCDEFGH</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="btn_bancaire"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3" data-backdrop="false">Modifier</button></div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Modifier les informations bancaires</h4>
+									</div>
+									<div class="modal-body">
+										<label for="code_banque">Code Banque</label><input name="code_banque" placeholder="5 chiffres" class="form-control" type="text"/>
+										<label for="code_guichet">Code Guichet</label><input name="code_guichet" placeholder="5 chiffres" class="form-control" type="text"/>
+										<label for="numero_compte">Numero de compte</label><input name="numero_compte" placeholder="10 caractères" class="form-control" type="text"/>
+										<label for="cle_rib">Clé RIB</label><input name="cle_rib" placeholder="2 chiffres" class="form-control" type="text"/>
+										<label for="domiciliation">Domiciliation</label><input name="domiciliation" placeholder="caractères alphanumériques" class="form-control" type="text"/>
+										<label for="iban">IBAN</label><input name="iban" placeholder="27 caractères alphanumériques" class="form-control" type="text"/>
+										<label for="bic">BIC</label><input name="bic" placeholder="8 ou 11 lettres" class="form-control" type="text"/>
+									</div>
+									<div class="modal-footer">
+										<div id="modal_bancaire_info"></div>
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="button" id="enregistrer_bancaire" class="btn btn-primary">Enregistrer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h3>Justificatifs</h3>
+						<div id="info_enregitrement_bancaire"></div>
+						<div class="user_bancaire">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>Type de document</th>
+										<th>Nom</th>
+										<th>Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td id="user_documents">Acte de naissance/Contrat de mariage</td>
+										<td id="user_code_guichet">acte_naissance_dupont_melanie.pdf</td>
+										<td id="user_num_compte">
+											<button type="button" id="download_doc" class="btn btn-default">Télécharger</button>
+											<div class="progress progress1">
+												<div id="progress11" class="progress-bar progress-bar-striped active" role="progressbar"
+												aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td id="user_documents">Acte de naissance/Contrat de mariage</td>
+										<td id="user_code_guichet">contrat_mariage_dupont_caroline-maurice.pdf</td>
+										<td id="user_num_compte">
+											<button type="button" id="download_doc2" class="btn btn-default">Télécharger</button>
+											<div class="progress progress2">
+												<div id="progress21" class="progress-bar progress-bar-striped active" role="progressbar"
+												aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td id="user_documents">Facture</td>
+										<td id="user_code_guichet">facture_voyage_afrique_072016.pdf</td>
+										<td id="user_num_compte">
+											<button type="button" id="download_doc3" class="btn btn-default">Télécharger</button>
+											<div class="progress progress3">
+												<div id="progress31" class="progress-bar progress-bar-striped active" role="progressbar"
+												aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--FIN MY_BODY2-->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-4 col-footer">
+							<h5>Contact</h5>
+							<p>0 820 820 001</br>
+								956 chem Noyelle, 01170 GEX</br>
+								cee@bnp.fr </br>
+								<a href="#contact" class="btn_contact" data-toggle="modal" data-target="#myModal2" data-backdrop="false">Nous contacter</a></p>
+							</div>
+							<div class="col-xs-12 col-md-4 col-footer">
+								<h5>Suivez notre actualité</h5>
+								<a href="https://www.facebook.com/pages/BNP-Paribas/130294053687269?fref=ts" target="_blank"><img src="images/facebook-icone.png"></a> <a href="https://www.instagram.com/bnpparibas/" target="_blank"><img src="images/instragram_icone.png"></a> <a href="https://twitter.com/mabanque_bnpp" target="_blank"><img src="images/twitter_icone.png"></a>
+							</div>
+							<div class="col-xs-12 col-md-4 col-footer">
+								<h5>A propos</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo dignissim mauris, at condimentum mauris pellentesque et. Ut dignissim ullamcorper magna, vel gravida erat bibendum vel. Sed eget placerat nunc. </p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Nous contacter</h4>
+								</div>
+								<div class="modal-body">
+									<input name="name" placeholder="Nom" class="form-control" type="text" id="UserUsername"/>
+									<input name="firstname" placeholder="Prénom" class="form-control" type="text" id="UserUsername"/>
+									<input type="email" name="email" placeholder="Email" class="form-control"/>
+									<textarea name="message" id="message" placeholder="Votre message" class="form-control"></textarea>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" id="envoyer_btn" class="btn btn-primary" data-dismiss="modal">Envoyer</button>
+								</div>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2618.6466537250944!2d2.20116391603178!3d48.97925027929952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e666d60f7a8cdd%3A0xfaaf461cd3210c7b!2s2+Rue+Henri+Dunant%2C+95240+Cormeilles-en-Parisis!5e0!3m2!1sfr!2sfr!4v1480061547124" width="100%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<script type="text/javascript" src="bootstrap/jquery.js"></script>
+			<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+			<script type="text/javascript" src="jsprojet.js"></script>
+		</body>
+		</html>
